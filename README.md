@@ -3,31 +3,42 @@ This myBB plugin associates Morphic Characters and Forms to Morphic users, allow
 
 ## Database Tables
 
+```
 `morphic_chars`
 L `char_id` (pkey) Character ID, each character has a unique ID
 L `user_id` (fkey, uid) User ID, references the user's myBB uid
 L `name` The character's name
 L `character_profile` Link to the character's application
+```
 
+```
 `morphic_forms`
 L `form_id` (pkey) Form ID, each form has a unique ID
 L `char_id` (fkey, char_id) Character ID, ties each form to a single character
 L `species` The form's species
 L `active` Whether or not the form is currently active. Old forms are kept in the database so that the player doesn't lose record of player posts from when they were in them.
+```
 
+```
 `morphic_posts`
 L `post_id` (fkey, pid) Post ID, used to associate a post with the form it's made in.
 L `form_id` (fkey, form_id) Form ID, used to associate the corresponding post_id as a Morphic post made in a unique Morphic form
+```
 
 ## To-do
 
 ### Database Query Functions
+
 * Create a function to get a list of the user's current characters
 * Create a function to get a list of the character's forms
+
+---
 
 * Create a function to count the number of a form's posts
 * Create a function to count the number of a character's posts
 * Create a function to count the number of a player's Morphic posts
+
+---
 
 * Create a function to handle the database query for adding a form post
 * Create a function to handle the database query for removing form post
