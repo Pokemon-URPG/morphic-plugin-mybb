@@ -17,10 +17,10 @@ if (!$db->table_exists('morphic_forms')) {
     $db->write_query(
         "CREATE TABLE " . TABLE_PREFIX . "morphic_forms(
             `form_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-            `post_id` int(10) unsigned NOT NULL,
             `species` varchar(30),
+            `char_id` int(10) unsigned NOT NULL,
             PRIMARY KEY (`form_id`),
-            FOREIGN KEY (`post_id`) REFERENCES `" . TABLE_PREFIX . "posts` (`pid`)
+            FOREIGN KEY (`char_id`) REFERENCES `" . TABLE_PREFIX . "morphic_chars` (`char_id`)
         ) ENGINE=MyISAM{$collation};"
     );
 };
