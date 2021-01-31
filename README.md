@@ -29,8 +29,8 @@ L `form_id` (fkey, form_id) Form ID, used to associate the corresponding post_id
 
 ### Database Query Functions
 
-* Create a function to get a list of the user's current characters
-* Create a function to get a list of the character's forms
+* ~~Create a function to get a list of the user's current characters~~
+* ~~Create a function to get a list of the character's forms~~
 
 ---
 
@@ -46,16 +46,16 @@ L `form_id` (fkey, form_id) Form ID, used to associate the corresponding post_id
 
 ### Fields & Saving
 * Hook into the following for handling the adding/editing of posts/threads: `newthread_do_newthread_end`, `newreply_do_newreply_end`, `editpost_do_editpost_end`, `editpost_deletepost`
-* Add fields to Mod CP so Arbiters can add values
-  * Load input fields for existing characters
-  * Load input fields for existing forms
-  * Create an "Add Character" button that adds a new character text input via JS
-  * Create an "Add Form" button that adds a new form text input via JS if the existing Form fields are filled
+* ~~Add fields to Mod CP so Arbiters can add values~~
+  * ~~Load input fields for existing characters~~
+  * ~~Load input fields for existing forms~~
+  * ~~Create an "Add Character" button that adds a new character text input via JS~~
+  * ~~Create an "Add Form" button that adds a new form text input via JS if the existing Form fields are filled~~
   * Create a checkbox for each form to toggle whether it is active or not
-  * Hook into the saving of a user in the Mod CP to update database tables
+  * Hook into the saving of a user in the Mod CP to update database tables (~~new character, update characters, new forms~~, update forms)
   
 ### Templating
-* Add Mod CP inputs (noted above)
+* ~~Add Mod CP inputs (noted above)~~
 * Add character select to `newthread`, `newreply`, `quickreply`, and `editpost` templates
 * Add form select to `newthread`, `newreply`, `quickreply`, and `editpost` templates
 * Add part to the user info in the postbit that shows the current character name and the current form
