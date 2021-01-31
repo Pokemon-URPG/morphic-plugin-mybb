@@ -41,8 +41,9 @@ L `form_id` (fkey, form_id) Form ID, used to associate the corresponding post_id
 ---
 
 * Create a function to handle the database query for adding a form post
-* Create a function to handle the database query for removing form post
-* Create a function to handle the database query for adding a character
+* Create a function to handle the database query for changing which form a post is made in
+* ~~Create a function to handle the database query for adding a character~~
+* ~~Create a function to handle the database query for updating a character~~
 
 ### Fields & Saving
 * Hook into the following for handling the adding/editing of posts/threads: `newthread_do_newthread_end`, `newreply_do_newreply_end`, `editpost_do_editpost_end`, `editpost_deletepost`
@@ -51,7 +52,7 @@ L `form_id` (fkey, form_id) Form ID, used to associate the corresponding post_id
   * ~~Load input fields for existing forms~~
   * ~~Create an "Add Character" button that adds a new character text input via JS~~
   * ~~Create an "Add Form" button that adds a new form text input via JS if the existing Form fields are filled~~
-  * Create a checkbox for each form to toggle whether it is active or not
+  * (optional) Create a checkbox for each form to toggle whether it is active or not
   * Hook into the saving of a user in the Mod CP to update database tables (~~new character, update characters, new forms~~, update forms)
   
 ### Templating
@@ -63,6 +64,6 @@ L `form_id` (fkey, form_id) Form ID, used to associate the corresponding post_id
 * Add sections on the User's Edit Profile screen that shows a list of characters (uneditable), but allows editing of their character application link
 * Add sections on User Profile that
   * show # of total Morphic posts
-  * links characters' application
+  * (optional) links characters' application
   * shows # of posts per character
   * shows # of posts per form
